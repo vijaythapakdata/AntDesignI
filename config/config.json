@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "paginated-table-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/paginatedTable/PaginatedTableWebPart.js",
+          "manifest": "./src/webparts/paginatedTable/PaginatedTableWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PaginatedTableWebPartStrings": "lib/webparts/paginatedTable/loc/{locale}.js"
+  }
+}

@@ -65,8 +65,8 @@ const PaginatedTable:React.FC<IPaginatedTableProps>=(props)=>{
 
   const _filteredSearch=items.filter((item)=>(item?.Title?.toLowerCase()||'').includes(searchText.toLowerCase())||
 (item?.EmailAddress?.toLowerCase()||'').includes(searchText.toLowerCase())||
-(item?.Admin?.text?.toLowerCase()||'').includes(searchText.toLowerCase())||
-(item?.City?.Title?.toLowerCase()||'').includes(searchText.toLowerCase())
+(item?.Admin?.toLowerCase()||'').includes(searchText.toLowerCase())||
+(item?.City?.toLowerCase()||'').includes(searchText.toLowerCase())
 )
   return (
     <>
